@@ -1,0 +1,32 @@
+name: "Feature Request"
+description: "Suggest a new feature, model optimization, or UI enhancement"
+title: "[FEAT]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We welcome community proposals! Please describe your proposed feature and how it benefits Dubb-in users.
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "Feature Description"
+      description: "Explain the proposed feature or capability."
+      placeholder: "e.g., Add support for custom Whisper fine-tuned models..."
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Motivation & Use Case"
+      description: "Why is this feature needed, and who will use it?"
+      placeholder: "Allows dubbing specialized medical or technical vocabulary..."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives Considered"
+      description: "Any alternative approaches or workarounds you have tested."
+    validations:
+      required: false

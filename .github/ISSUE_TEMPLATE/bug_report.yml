@@ -1,0 +1,53 @@
+name: "Bug Report"
+description: "Report a bug or unexpected behavior in Dubb-in AI Studio"
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this issue! Please provide as much detail as possible to help us reproduce and resolve it.
+  - type: textarea
+    id: description
+    attributes:
+      label: "Problem Description"
+      description: "A clear and concise description of the bug."
+      placeholder: "e.g., Synthesis fails when running with 2 audio samples in German..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment & OS"
+      description: "Operating system, Python version, and CUDA/DirectML driver version."
+      placeholder: "Windows 11 x64, Python 3.10.11, NVIDIA Driver 550.54 (CUDA 11.8)"
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: "Hardware Specs"
+      description: "GPU model, VRAM size, and CPU."
+      placeholder: "NVIDIA GeForce GTX 960 (2GB VRAM), Intel Core i7-4790, 16GB RAM"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Step-by-step instructions to reproduce the problem."
+      placeholder: |
+        1. Open Dubb-in via Dubb-in.exe
+        2. Go to 'Empreinte Vocale (.dvf)'
+        3. Record Sample 1
+        4. Click 'Démarrer l'apprentissage IA'
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Terminal Logs & Tracebacks"
+      description: "Paste relevant command line or Streamlit error logs here."
+      render: shell
+    validations:
+      required: false

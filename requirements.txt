@@ -1,0 +1,58 @@
+# =====================================================================
+# Dubb-in AI Studio - Production Dependencies
+# Target Python Version: 3.10.x (Recommended: Python 3.10.11)
+# =====================================================================
+#
+# NOTE ON PYTORCH & ACCELERATION:
+# - For NVIDIA GPUs (CUDA 11.8):
+#     pip install torch==2.2.2+cu118 torchvision==0.17.2+cu118 torchaudio==2.2.2+cu118 --index-url https://download.pytorch.org/whl/cu118
+#     pip install onnxruntime-gpu>=1.16.0
+# - For CPU Only:
+#     pip install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https://download.pytorch.org/whl/cpu
+#     pip install onnxruntime>=1.16.0
+# =====================================================================
+
+# Core Interface & Native Desktop Window
+streamlit==1.37.1
+pywebview>=5.1
+psutil>=5.9.0
+setuptools<70
+
+# Voice Activity Detection & Speech Recognition (Whisper)
+faster-whisper==1.0.3
+ctranslate2>=4.0.0
+
+# Neural Voice Cloning & Synthesis (XTTS-v2)
+TTS==0.22.0
+transformers==4.36.2
+numpy==1.22.0
+soundfile==0.12.1
+librosa>=0.10.0
+audio-recorder-streamlit>=0.0.8
+
+# Audio Separation & Vocal Stem Extraction
+demucs>=4.0.0
+
+# AI Lip-Sync Engine (Wav2Lip & Vision Pipeline)
+opencv-python-headless>=4.8.0.76
+onnxruntime>=1.16.0
+numba>=0.58.0
+
+# Autonomous Translation & Multi-language Processing
+deep-translator==1.11.4
+jieba>=0.42.1
+pypinyin>=0.50.0
+hangul-romanize>=0.1.0
+jamo>=0.4.1
+cutlet>=0.3.0
+fugashi>=1.3.0
+unidic-lite>=1.0.8
+mecab-python3>=1.0.8
+
+# Media Ingestion & Web Stream Extraction
+yt-dlp>=2024.08.06
+
+# Local Microservice API Backend (Optional Server Mode)
+fastapi>=0.110.0
+uvicorn>=0.28.0
+python-multipart>=0.0.9

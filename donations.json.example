@@ -1,0 +1,11 @@
+{
+  "kofi": "https://ko-fi.com/your_handle",
+  "buy_me_a_coffee": "https://buymeacoffee.com/your_handle",
+  "github_sponsors": "https://github.com/sponsors/your_org",
+  "paypal": "https://www.paypal.me/your_handle",
+  "crypto": {
+    "bitcoin": "",
+    "ethereum": "",
+    "usdt_trc20": ""
+  }
+}

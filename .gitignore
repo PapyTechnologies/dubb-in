@@ -1,0 +1,117 @@
+# =====================================================================
+# Dubb-in .gitignore - AI Voice Dubbing & Cloning Studio
+# =====================================================================
+
+# Python runtime & compiled artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Machine Learning & AI Model weights (>50MB, downloaded on launch)
+models/*.onnx
+models/*.bin
+models/*.pt
+models/*.pth
+models/*.safetensors
+lipsync/models/*.onnx
+*.onnx
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+!models/.gitkeep
+!lipsync/models/.gitkeep
+!lipsync/models/face_detection_yunet_2023mar.onnx
+
+# User data, voice recordings & proprietary .dvf fingerprints
+voices/*
+!voices/.gitkeep
+voices/voices.db
+voices/fingerprints/*
+!voices/fingerprints/.gitkeep
+backend/voices/*
+!backend/voices/.gitkeep
+*.dvf
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.aac
+
+# Projects, video inputs and exports
+projects/*
+!projects/.gitkeep
+projects/lipsync_exports/*
+!projects/lipsync_exports/.gitkeep
+backend/projects/*
+!backend/projects/.gitkeep
+backend/uploads/*
+!backend/uploads/.gitkeep
+outputs/
+temp/
+uploads/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+
+# Logs, caches and temporary extraction scripts
+*.log
+*.tmp
+_ui_tr_cache.json
+_fr_strings.json
+_segs_*.json
+*.bak
+*.bak_*
+_peek*.py
+_test*.py
+_*_temp.py
+
+# Standalone HTML app (reserved for web testing prior to release)
+index.html
+
+# Environment variables & private credentials
+.env
+.env.*
+*.secret
+credentials.json
+
+# Streamlit runtime cache
+.streamlit/secrets.toml
+
+# IDE & OS specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo

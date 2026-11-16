@@ -1,0 +1,6 @@
+{
+  "app_language": "fr",
+  "hardware_tier": "ultra",
+  "hd_models": false,
+  "default_whisper": "small"
+}
